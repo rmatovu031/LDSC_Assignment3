@@ -66,7 +66,9 @@ squeue -u "username"
  sbatch h2_LDL_MI.sh
 #lets look at the output
 
-less h2_LDL_MI.log
+less LDL_h2.log
+less MI_h2.log
+
 # run the genetic correlation
 
 sbatch LDSC_LDL_MI.sh
