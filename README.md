@@ -1,6 +1,7 @@
 # LDSC_Assignment3
 LD Score Assignment [calculating Genetic Correlation and heretability]
-
+####################################################
+####################################################
 ####### Copy files and setup WD
 
 #login to ilifu and go to your home
@@ -18,6 +19,15 @@ tar -xvzf LDSC_tut.tar.gz
 #####ldsc
 
 cd ~/LDSC_tut
+# download summary statistics 
+wget https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST011001-GCST012000/GCST011365/GCST011365_buildGRCh37.tsv
+
+wget http://csg.sph.umich.edu/abecasis/public/lipids2013/jointGwasMc_LDL.txt.gz
+
+
+## decompress zipped file
+
+$ gunzip jointGwasMc_LDL.txt.gz
 
 # download and install ldsc
 
