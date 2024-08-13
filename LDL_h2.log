@@ -1,0 +1,32 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--h2 //users/rmatovu/LDSC_tut/sumstats/Formatted/LDL.sumstats.gz \
+--ref-ld-chr /users/rmatovu/LDSC_tut/eur_w_ld_chr/ \
+--out /users/rmatovu/LDSC_tut/LDL_h2 \
+--w-ld-chr /users/rmatovu/LDSC_tut/eur_w_ld_chr/ 
+
+Beginning analysis at Sat Aug 10 23:14:29 2024
+Reading summary statistics from //users/rmatovu/LDSC_tut/sumstats/Formatted/LDL.sumstats.gz ...
+Read summary statistics for 1033193 SNPs.
+Reading reference panel LD Score from /users/rmatovu/LDSC_tut/eur_w_ld_chr/[1-22] ... (ldscore_fromlist)
+Read reference panel LD Scores for 1290028 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from /users/rmatovu/LDSC_tut/eur_w_ld_chr/[1-22] ... (ldscore_fromlist)
+Read regression weight LD Scores for 1290028 SNPs.
+After merging with reference panel LD, 1028373 SNPs remain.
+After merging with regression SNP LD, 1028373 SNPs remain.
+Using two-step estimator with cutoff at 30.
+Total Observed scale h2: 0.202 (0.0328)
+Lambda GC: 1.0135
+Mean Chi^2: 1.1922
+Intercept: 0.8833 (0.0082)
+Ratio < 0 (usually indicates GC correction).
+Analysis finished at Sat Aug 10 23:14:37 2024
+Total time elapsed: 8.91s
