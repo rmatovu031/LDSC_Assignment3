@@ -11,7 +11,8 @@ ssh username@*****.ac.za
 cd ~
 
 #navigate to the LDSC_tut directory 
-cd ~/LDSC_tut
+
+ cd ~/LDSC_tut
 
 # download summary statistics 
 wget https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST011001-GCST012000/GCST011365/GCST011365_buildGRCh37.tsv
@@ -42,6 +43,7 @@ source activate ldsc #load and activate the environment
 ./munge_sumstats.py -h
 
 # prepare the summary statistics
+
 cd ~/LDSC_tut
 
 sbatch format_sumstats_ldsr.sh
