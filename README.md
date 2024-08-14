@@ -70,7 +70,8 @@ less LDL_h2.log
 less MI_h2.log
 
 # run the genetic correlation
-
+# Acknowledgement
+Thanks to Dr. Mary Mufford for initially generating the scripts on which this work was customised.
 sbatch LDSC_LDL_MI.sh
 
 #lets look at the output
