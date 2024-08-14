@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name='FormatSumStats'
+#SBATCH --job-name='Gen_corr'
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=16GB
 #SBATCH --output=testjob-%j-stdout.log
