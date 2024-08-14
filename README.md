@@ -1,10 +1,12 @@
 # LDSC_Assignment3
 LD Score Assignment [calculating Genetic Correlation and heretability]
+
 ####################################################
 ####################################################
 
 # login to ilifu and go to your home
 ssh username@*****.ac.za
+
 cd ~
 
 #navigate to the LDSC_tut directory 
@@ -19,6 +21,7 @@ gunzip jointGwasMc_LDL.txt.gz
 
 # download and install ldsc
 git clone https://github.com/bulik/ldsc.git
+
 cd ldsc
 
 #start an interactive session
@@ -26,15 +29,19 @@ sinteractive
 
 # create the ldsc environment
 module load anaconda3/login
+
 conda env create --file environment.yml
+
 source activate ldsc #load and activate the environment
 
 ### test if it works
 ./ldsc.py -h
+
 ./munge_sumstats.py -h
 
 # prepare the summary statistics
 cd ~/LDSC_tut
+
 sbatch format_sumstats_ldsr.sh
 
 # Check running jobs
@@ -50,7 +57,9 @@ less LDL_MI_rg.log
 sbatch h2_LDL_MI.sh
 
 #lets look at the output
+
 less LDL_h2.log
+
 less MI_h2.log
 
 #############################################
