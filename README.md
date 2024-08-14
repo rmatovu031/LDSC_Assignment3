@@ -2,6 +2,7 @@
 LD Score Assignment [calculating Genetic Correlation and heretability]
 
 ####################################################
+
 ####################################################
 
 # login to ilifu and go to your home
@@ -21,6 +22,7 @@ gunzip jointGwasMc_LDL.txt.gz
 
 # download and install ldsc
 git clone https://github.com/bulik/ldsc.git
+
 
 cd ldsc
 
@@ -63,6 +65,7 @@ less LDL_h2.log
 less MI_h2.log
 
 #############################################
+
 #############################################
 # Acknowledgement
 Thanks to Dr. Mary Mufford for initially generating the scripts on which this work was customised.
